@@ -1,30 +1,7 @@
 import streamlit as st
-import pandas as pd
-from sklearn import datasets
-from sklearn.ensemble import RandomForestClassifier
-import streamlit as st
-import urllib.request
-from streamlit_lottie import st_lottie
-from PIL import Image
-import geopandas as gdp
-import pandas as pd
-import folium
-import branca.colormap as cm
-import matplotlib.pyplot as plt
-import plotly.express as px
-import json
-import numpy as np
-import plotly.graph_objs as go
-import plotly.express as px
-import geopandas as gpd
-import pyproj
-from shapely import wkt
-from streamlit_plotly_events import plotly_events
-from scipy.signal import detrend
 
 
 def about():
-    import streamlit as stS
     st.markdown("<h1 style='text-align: center; color: black;'>Atmospheric Carbon Dioxide and Socioeconomic Modeling Via Cluster Analysis</h1>",
                 unsafe_allow_html=True)
     st.markdown(
