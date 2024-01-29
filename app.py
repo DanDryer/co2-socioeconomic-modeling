@@ -14,7 +14,7 @@ def about():
                 unsafe_allow_html=True)
 
     st.markdown("<h2 style='text-align: center; color: grey;'>Atmospheric Carbon Dioxide Levels Contiue to Rise in The United States</h2>", unsafe_allow_html=True)
-    htmlFile1 = open("images\co2_vs_time.html",
+    htmlFile1 = open("images/co2_vs_time.html",
                      'r', encoding='utf-8')
     fig1 = htmlFile1.read()
     st.components.v1.html(fig1, height=430)
@@ -48,7 +48,7 @@ def about():
         if mapbox == 'Atmospheric CO2':
             st.markdown("<h3 style='text-align: left ; color: black;'>Average Annual Atmospheric CO<sub>2</sub> (ppm) by County</h2>",
                         unsafe_allow_html=True)
-            htmlFile2 = open("images\countyco2_vs_year.html",
+            htmlFile2 = open("images/countyco2_vs_year.html",
                              'r', encoding='utf-8')
             fig2 = htmlFile2.read()
             st.components.v1.html(fig2, height=600, width=1000)
@@ -61,7 +61,7 @@ def about():
             if option == 'Overall Vulnerability':
                 st.markdown("<h3 style='text-align: left; color: black;'>Overall Summary Ranking by County</h3>",
                             unsafe_allow_html=True)
-                htmlFile3 = open("images\svi_vs_year.html",
+                htmlFile3 = open("images/svi_vs_year.html",
                                  'r', encoding='utf-8')
                 fig3 = htmlFile3.read()
                 st.components.v1.html(fig3, height=600)
@@ -69,7 +69,7 @@ def about():
             elif option == 'Socioeconoimc Status':
                 st.markdown("<h3 style='text-align: left; color: black;'>Socioeconomic Status by County</h3>",
                             unsafe_allow_html=True)
-                htmlFile3 = open("images\soc_econ_status.html",
+                htmlFile3 = open("images/soc_econ_status.html",
                                  'r', encoding='utf-8')
                 fig3 = htmlFile3.read()
                 st.components.v1.html(fig3, height=600)
@@ -77,7 +77,7 @@ def about():
             elif option == 'Household Characteristics':
                 st.markdown("<h3 style='text-align: left; color: black;'>Household Characteristics by County</h3>",
                             unsafe_allow_html=True)
-                htmlFile3 = open("images\house_char.html",
+                htmlFile3 = open("images/house_char.html",
                                  'r', encoding='utf-8')
                 fig3 = htmlFile3.read()
                 st.components.v1.html(fig3, height=600)
@@ -85,7 +85,7 @@ def about():
             elif option == 'Racial & Ethnic Minority Status':
                 st.markdown("<h3 style='text-align: left; color: black;'>Racial & Ethnic Minority Status by County</h3>",
                             unsafe_allow_html=True)
-                htmlFile3 = open(r"images\rac_ethn_min_status.html",
+                htmlFile3 = open("images/rac_ethn_min_status.html",
                                  'r', encoding='utf-8')
                 fig3 = htmlFile3.read()
                 st.components.v1.html(fig3, height=600)
@@ -93,7 +93,7 @@ def about():
             elif option == 'Housing Type & Transportation':
                 st.markdown("<h3 style='text-align: left; color: black;'>Housing Type & Transportation by County</h3>",
                             unsafe_allow_html=True)
-                htmlFile3 = open("images\hous_transp.html",
+                htmlFile3 = open("images/hous_transp.html",
                                  'r', encoding='utf-8')
                 fig3 = htmlFile3.read()
                 st.components.v1.html(fig3, height=600)
@@ -116,7 +116,7 @@ def about():
     left, right = st.columns((2))
     with right:
         cluster_map_html = open(
-            "images\clustered.html", 'r', encoding='utf-8')
+            "images/clustered.html", 'r', encoding='utf-8')
         cluster_fig = cluster_map_html.read()
         st.components.v1.html(cluster_fig, height=400)
         st.markdown("""<p style='text-align: center; color: black;'>Counties highlighted by cluster assignment. Colors and id match those displayed in the radar plot.</p>""",
