@@ -5,12 +5,13 @@ def about():
     st.markdown("<h1 style='text-align: center; color: black;'>Atmospheric Carbon Dioxide and Socioeconomic Modeling Via Cluster Analysis</h1>",
                 unsafe_allow_html=True)
     st.markdown(
-        """<a style='display: block; text-align: center;' href="https://github.com/DanDryer/co2-socioeconomic-modeling">View Code Repository</a>""", unsafe_allow_html=True,)
+        """<a style='display: block; text-align: center;' href="https://github.com/DanDryer/Team-Project-Practicum-6748">View Code Repository</a>""", unsafe_allow_html=True,)
 
     st.divider()
     st.markdown("""<p style='text-align: left; color: black; font-size: 20px;'>Natural gas and coal accounted for roughly 58% of the United States electricity generation in 2022, releasing approximately 1,508 million metric tons of Carbon Dioxide (CO<sub>2</sub>) <sup>1</sup>. As atmospheric CO<sub>2</sub> levels
                 increase, it is likely that temperatures will continue to rise due to the atmospheric greenhouse effect <sup>2</sup>. There is a need to reduce our CO<sub>2</sub> emissions accross the globe. 
-                In the United States, identifying CO<sub>2</sub> sources and sinks and potential driving factors is integral to tackling the problem. Specifically, can we group US counties based on socioeconomic factors and atmospheric CO<sub>2</sub> levels? If successful, this data can be utilized to  better drive policy creation by specific geographic region and mitigate CO<sub>2</sub> emissions.</p>""",
+                In the United States, identifying CO<sub>2</sub> sources and sinks and potential driving factors is integral to tackling the problem. Specifically, can we group US counties based on socioeconomic factors and atmospheric CO<sub>2</sub> levels?
+                If successful, this data can be utilized to better drive policy creation for specific geographic regions thereby mitigating CO<sub>2</sub> emissions.</p>""",
                 unsafe_allow_html=True)
 
     st.markdown("<h2 style='text-align: center; color: grey;'>Atmospheric Carbon Dioxide Levels Contiue to Rise in The United States</h2>", unsafe_allow_html=True)
