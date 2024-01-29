@@ -14,7 +14,7 @@ def about():
                 unsafe_allow_html=True)
 
     st.markdown("<h2 style='text-align: center; color: grey;'>Atmospheric Carbon Dioxide Levels Contiue to Rise in The United States</h2>", unsafe_allow_html=True)
-    htmlFile1 = open("images\CO2_vs_time.html",
+    htmlFile1 = open("images\co2_vs_time.html",
                      'r', encoding='utf-8')
     fig1 = htmlFile1.read()
     st.components.v1.html(fig1, height=430)
@@ -48,7 +48,7 @@ def about():
         if mapbox == 'Atmospheric CO2':
             st.markdown("<h3 style='text-align: left ; color: black;'>Average Annual Atmospheric CO<sub>2</sub> (ppm) by County</h2>",
                         unsafe_allow_html=True)
-            htmlFile2 = open("images\countyCO2_vs_year.html",
+            htmlFile2 = open("images\countyco2_vs_year.html",
                              'r', encoding='utf-8')
             fig2 = htmlFile2.read()
             st.components.v1.html(fig2, height=600, width=1000)
